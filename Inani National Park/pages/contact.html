@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact | Inani National Park</title>
+
+    <link rel="stylesheet" href="../Assets/bootstrap/bootstrap.css">
+    <link rel="stylesheet" href="../Assets/style/style.css">
+
+</head>
+
+<body>
+
+
+<!-- NAVBAR -->
+
+<nav class="navbar">
+
+    <div class="container nav-container">
+
+        <a href="../index.html" class="logo">
+             Inani National Park
+        </a>
+
+        <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        <ul class="nav-links" id="navLinks">
+
+            <li><a href="../index.html">Home</a></li>
+
+
+            <li>
+                <a href="endangered_species.html">
+                    Endangered Species
+                </a>
+            </li>
+
+            <li>
+                <a href="near_threaten.html">
+                    Near Threatened
+                </a>
+            </li>
+
+            <li><a href="mission.html">Mission</a></li>
+
+            <li><a href="about.html">About</a></li>
+
+            <li>
+                <a href="contact.html" class="active">
+                    Contact
+                </a>
+            </li>
+
+        </ul>
+
+    </div>
+
+</nav>
+
+
+<!-- HEADER -->
+
+<section class="page-header">
+
+    <div class="container">
+
+        <p>GET IN TOUCH</p>
+
+        <h1>Contact Us</h1>
+
+        <div class="breadcrumb">
+
+            <a href="../index.html">Home</a>
+            <span>/</span>
+            <span>Contact</span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- CONTACT -->
+
+<section class="section">
+
+    <div class="container contact-grid">
+
+
+        <!-- CONTACT INFORMATION -->
+
+        <div class="contact-info">
+
+            <p class="section-label">
+                CONTACT INFORMATION
+            </p>
+
+            <h2>Let's Talk About Wildlife</h2>
+
+            <div class="heading-line"></div>
+
+            <p>
+                Have a question about wildlife conservation?
+                Send us a message using the contact form.
+            </p>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    📍
+                </div>
+
+                <div>
+
+                    <h3>Location</h3>
+
+                    <p>Bangladesh</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    📧
+                </div>
+
+                <div>
+
+                    <h3>Email</h3>
+
+                    <p>murasheduli@gmail.com</p>
+
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    📞
+                </div>
+
+                <div>
+
+                    <h3>Phone</h3>
+
+                    <p>01303610053</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- FORM -->
+
+        <div class="contact-form-box">
+
+            <form id="contactForm" onsubmit="return validateForm()">
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="name">
+                            Full Name
+                        </label>
+
+                        <input
+                            type="text"
+                            id="name"
+                            name="name"
+                            placeholder="Enter your name"
+                        >
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="email">
+                            Email Address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="email"
+                            name="email"
+                            placeholder="Enter your email"
+                        >
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="phone">
+                        Phone Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        id="phone"
+                        name="phone"
+                        placeholder="Enter your phone number"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="subject">
+                        Subject
+                    </label>
+
+                    <input
+                        type="text"
+                        id="subject"
+                        name="subject"
+                        placeholder="Enter subject"
+                    >
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="message">
+                        Message
+                    </label>
+
+                    <textarea
+                        id="message"
+                        name="message"
+                        rows="6"
+                        placeholder="Write your message..."
+                    ></textarea>
+
+                </div>
+
+
+                <button type="submit"
+                        class="btn btn-primary form-button">
+                    Send Message
+                </button>
+
+
+                <button type="reset"
+                        class="btn btn-secondary form-button">
+                    Reset
+                </button>
+
+
+                <p id="formMessage"></p>
+
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- FOOTER -->
+
+<footer class="footer">
+
+    <div class="container footer-grid">
+
+        <div>
+
+            <h3> Inani National Park</h3>
+
+            <p>
+                Protecting wildlife and preserving natural habitats.
+            </p>
+
+        </div>
+
+        <div>
+
+            <h3>Quick Links</h3>
+
+            <a href="../index.html">Home</a>
+            <a href="endangered_species.html">Endangered Species</a>
+            <a href="near_threaten.html">Near Threatened</a>
+            <a href="mission.html">Mission</a>
+            <a href="about.html">About</a>
+
+        </div>
+
+        <div>
+
+            <h3>Contact</h3>
+
+            <p>📍 Bangladesh</p>
+            <p>📧 murasheduli@gmail.com</p>
+            <p>📞 01303618853</p>
+
+        </div>
+
+    </div>
+
+
+    <div class="footer-bottom">
+
+        <p>© 2026 Inani National Park. All Rights Reserved.</p>
+
+    </div>
+
+</footer>
+
+
+<script src="../Assets/bootstrap/bootstrap.js"></script>
+<script src="../Assets/JS/script.js"></script>
+
+</body>
+</html>
